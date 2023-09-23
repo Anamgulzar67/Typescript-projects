@@ -1,0 +1,13 @@
+npm init -y
+npm install typscript
+tsc --init
+tsc -w
+npm install inquirer
+npm install @types/inquirer
+npm install chalk
+npm install @types/chalk
+npm install ts-node
+
+
+chnage in package .json below name
+"type": "module",
