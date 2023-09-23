@@ -1,6 +1,6 @@
+#! /usr/bin/env node
 import * as inquirer from "inquirer";
 import chalk from "chalk";
-// calculator operators
 var Operators;
 (function (Operators) {
     Operators["ADD"] = "Addition";
@@ -9,11 +9,6 @@ var Operators;
     Operators["DEVIDE"] = "Division";
 })(Operators || (Operators = {}));
 const prompt = inquirer.createPromptModule();
-// function validateNumber(input: string): boolean | string {
-//   if (isNaN(parseFloat(input))) {
-//     return "Please enter a valid number";
-//   }
-//   return true;
 // }
 async function main() {
     const input = await prompt([
@@ -21,7 +16,6 @@ async function main() {
             type: "input",
             name: "num1",
             message: "Enter the first number",
-            // validate: validateNumber,
         },
         {
             type: "list",
@@ -33,7 +27,6 @@ async function main() {
             type: "input",
             name: "num2",
             message: "Enter the second number",
-            // validate:validateNumber,
         }
     ]);
     const num1 = parseFloat(input.num1);
