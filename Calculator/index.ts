@@ -1,7 +1,7 @@
 import * as inquirer from "inquirer";
 import chalk from "chalk";
 
-// calculator operators
+
 enum Operators {
   ADD = "Addition",
   SUBTRACT = "Subtraction",
@@ -9,11 +9,7 @@ enum Operators {
   DEVIDE = "Division",
 }
 const prompt = inquirer.createPromptModule();
-// function validateNumber(input: string): boolean | string {
-//   if (isNaN(parseFloat(input))) {
-//     return "Please enter a valid number";
-//   }
-//   return true;
+
 // }
    async function main() 
   {
@@ -22,7 +18,7 @@ const prompt = inquirer.createPromptModule();
         type: "input",
         name: "num1",
         message: "Enter the first number",
-        // validate: validateNumber,
+       
       },
       {
        type: "list",
@@ -34,7 +30,7 @@ const prompt = inquirer.createPromptModule();
       type: "input",
       name: "num2",
       message: "Enter the second number",
-      // validate:validateNumber,
+   
     
      } 
 ]);
